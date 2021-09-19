@@ -1,0 +1,10 @@
+<wxs src="../../utils/indexOf.wxs" module="tools" />
+
+<view class="page-body">   
+    <view class='wrapper'>
+    <view class="form">
+      <input id="title" type="text" placeholder="分类名称" value="{{class_name}}" bindinput="bindKeyInput"/>
+    </view>
+    </view>
+</view>
+<button class="upload-btn" bindtap="upload">保 存</button>

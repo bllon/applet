@@ -1,0 +1,36 @@
+<wxs src="../../utils/indexOf.wxs" module="tools" />
+
+<view class="page-body">
+    
+    <view class='wrapper'>
+        <view class="form">
+            <input id="title" type="text" placeholder="标题" value="{{title}}" bindinput="bindKeyInput"/>
+            <view class="section">
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class="picker">
+                        分类：{{array[index]}}
+                    </view>
+                </picker>
+            </view>
+            <view class="section section_gap">
+                <view class="body-view">
+                    置顶
+                    <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+                </view>
+            </view>
+            <input class="labels" type="text" placeholder="添加标签 (用英文逗号分隔)" value="{{label}}" bindinput="bindLabel"/>
+        </view>
+    </view>
+</view>
+<view wx:if="{{word != ''}}" class="content">
+    内容 :  {{word}}
+</view>
+<view class="button-sp-area">
+    <view class="btn-group">
+        <button class="mini-btn" type="primary" size="mini" bindtouchstart='recorderStart' bindtouchend='recorderEnd'>按住录音</button>
+        <button wx:if="{{hasRecord}}" class="mini-btn" type="default" size="mini" bindtap="play">播放</button>
+        <button wx:if="{{hasRecord}}" class="mini-btn" type="default" size="mini" bindtap="trans">转文字</button>
+    </view>
+</view>
+
+<button class="upload-btn" bindtap="upload">保 存</button>

@@ -1,0 +1,38 @@
+/**load.wxss**/
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  .btn {
+    margin-top: 100px;
+    background: rgb(95, 192, 221);
+    color: rgb(245, 66, 125);
+  }
+
+  .userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+  }
+  
+  .userinfo-nickname {
+    color: #aaa;
+    
+  }
+  
+  .title {
+    color: #aaa;
+    font-size: 50rpx;
+    font-weight: bold;
+  }
+
+  .yindao {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 30rpx;
+    font-weight: bold;
+  }

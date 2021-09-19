@@ -1,0 +1,14 @@
+<!--load.wxml-->
+<view class="container">  
+  <view>
+    <text class="title">{{motto}}</text>
+  </view>
+  <view class="userinfo">
+    <button class="btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="yindao">点击头像进入</text>
+    </block>
+  </view>
+</view>

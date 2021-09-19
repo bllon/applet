@@ -1,0 +1,69 @@
+.page-body {
+  width:100%;
+  height:200px;
+  background: rgb(163, 222, 240);
+}
+.wrapper {
+  width: 100%;
+  padding-bottom: 5px;
+  background: #a3def0;
+}
+.form{
+  width: 100%;
+  height: 200px;
+  background: #fff;
+}
+#title{
+  display: block;
+  width: auto;
+  height:50px;
+  border-bottom:1px solid #ddd;
+  font-size:18px;
+  font-weight:bold;
+  line-height:50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.section{
+  display: block;
+  width: 100%;
+  height:49px;
+  float: left;
+  line-height: 49px;
+  text-indent: 10px;
+  border-bottom:1px solid #ddd
+}
+.labels{
+  display: block;
+  width: 100%;
+  height:49px;
+  line-height:49px;
+  float: left;
+  background: #fff;
+  padding-left:10px;
+  border-bottom:1px solid #ddd
+}
+.content{
+  width:95%;
+  height:auto;
+  background:#fff;
+  padding:10px;
+  word-break: break-all;
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  width: 100%;
+  margin-bottom:50px;
+}
+.btn-group{
+  width: auto;
+  text-align: center;
+}
+.mini-btn{
+  width:56px;
+  margin-right: 10rpx;
+}

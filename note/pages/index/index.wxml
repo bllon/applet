@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="nav">
+    <block wx:for="{{nav}}" wx:for-index="index" wx:for-item="item">
+      <view class="box" bindtap="jump" data-link="{{item.link}}">{{item.name}}</view>
+    </block>
+  </view>
+</view>

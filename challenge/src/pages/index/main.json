@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "i-row": "../../../static/dist/row/index",
+        "i-col": "../../../static/dist/col/index",
+        "i-notice-bar": "../../../static/dist/notice-bar/index"
+    }
+}

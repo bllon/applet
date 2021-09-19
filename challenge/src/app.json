@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/swiper/main",
+    "pages/index/main",
+    "pages/singlePlayer/main",
+    "pages/doubleBattle/main",
+    "pages/learn/main",
+    "pages/leaderBoard/main",
+    "pages/user/main",
+    "pages/gameHistory/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#02a774",
+    "navigationBarTitleText": "环保挑战赛",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath":"pages/index/main",
+        "text":"首页",
+        "iconPath":"static/images/home.png",
+        "selectedIconPath":"static/images/home-active.png"
+      },
+      {
+        "pagePath":"pages/leaderBoard/main",
+        "text":"排行榜",
+        "iconPath":"static/images/leaderBoard.png",
+        "selectedIconPath":"static/images/leaderBoard-active.png"
+      },
+      {
+        "pagePath":"pages/user/main",
+        "text":"我的",
+        "iconPath":"static/images/user.png",
+        "selectedIconPath":"static/images/user-active.png"
+      }
+    ]
+  }
+}

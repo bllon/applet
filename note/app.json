@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/load/load",
+    "pages/record/record",   
+    "pages/index/index",
+    "pages/class/class",     
+    "pages/update/update",   
+    "pages/addClass/addClass",   
+    "pages/list/list",     
+    "pages/select/select",       
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/label/label" 
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#a3def0",
+    "navigationBarTitleText": "简易云笔记",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

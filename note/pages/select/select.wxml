@@ -1,0 +1,13 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">选择笔记类型</view>
+		<view class="page__desc"></view>
+	</view>
+	<view class="weui-grids">
+        <block wx:for="{{nav}}" wx:for-index="index" wx:for-item="item">
+            <a class="weui-grid" bindtap="jump" data-link="{{item.link}}">
+                <view class="weui-grid__label">{{item.name}}</view>
+            </a>
+        </block>
+	</view>
+</view>

@@ -1,0 +1,32 @@
+.page-body {
+  width:100%;
+  height:50px;
+  background: rgb(163, 222, 240);
+}
+.wrapper {
+  width: 100%;
+  padding-bottom: 5px;
+  position: fixed;
+  z-index: 999;
+  background: #a3def0;
+}
+.form{
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
+#title{
+  display: block;
+  width: auto;
+  height:50px;
+  border-bottom:1px solid #ddd;
+  font-size:18px;
+  font-weight:bold;
+  line-height:50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.upload-btn{
+  color: #888;
+  margin-top:100px;
+}

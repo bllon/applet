@@ -1,0 +1,9 @@
+.page{
+    background: #fff;
+}
+
+.page__hd{
+    height:50px;
+    line-height:50px;
+    text-align: center;
+}

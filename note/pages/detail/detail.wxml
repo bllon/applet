@@ -1,0 +1,29 @@
+<wxs src="../../utils/indexOf.wxs" module="tools" />
+
+<view class="page-body">
+    
+    <view class='wrapper'>
+        <view class="form">
+            <input id="title" type="text" placeholder="标题" value="{{list.title}}" disabled/>
+            <view class="section">
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" disabled>
+                <view class="picker">
+                    分类 : {{list.class_name}}
+                </view>
+                </picker>
+            </view>
+            <input class="labels" type="text" value="作者 : {{list.nickName}} 更新时间 : {{list.update_time}}" disabled/>
+            <input class="labels" type="text" value="标签 : {{list.label}}" disabled/>
+        </view>
+    </view>
+</view>
+<editor id="editor" class="ql-container" placeholder="{{placeholder}}" showImgSize showImgToolbar showImgResize read-only="true" bindready="onEditorReady">
+</editor>
+
+<view wx:if="{{!is_share}}" class="button-sp-area">
+    <view class="btn-group">
+        <button class="mini-btn" type="primary" size="mini" bindtap="edit">编辑</button>
+        <button class="mini-btn" type="default" size="mini" open-type="share">分享</button>
+        <button class="mini-btn" type="warn" size="mini" bindtap="del">删除</button>
+    </view>
+</view>

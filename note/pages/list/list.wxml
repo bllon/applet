@@ -1,0 +1,41 @@
+<view class="box">
+    <view class="search">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" bindinput="search" placeholder="搜索笔记"/>
+                </view>
+            </view>
+            <!-- 搜索按钮,调用搜索查询方法 -->
+            <!-- <view class="weui-search-bar__cancel-btn" bindtap='方法名a'>搜索</view> -->
+        </view>
+    </view>
+    
+    <view data-weui-theme="{{theme}}" style="margin-top:46px;">
+        <view class="page__bd">
+            <view wx:for="{{list}}" wx:key="data" class="list" catchtap="onNavigateTo" data-type="{{item.type}}" id="{{item.id}}" style="margin-bottom:2px;">
+                <view class="weui-panel">
+                    <view class="weui-panel__hd">标签: {{item.label}}</view>
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_text">
+                            <h4 class="weui-media-box__title">{{item.title}}</h4>
+                            <view wx:if="{{item.type != '语音'}}" class="weui-media-box__desc">{{item.content}}</view>
+                            <view class="weui-media-box__info">
+                                <view class="weui-media-box__info__meta">{{item.nickName}}</view>
+                                <view class="weui-media-box__info__meta">{{item.update_time}}</view>
+                                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{item.class_name}} : {{item.type}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+
+
+</view>
+<view class="add" data-url="/pages/select/select" bindtap="add">+</view>

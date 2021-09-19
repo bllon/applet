@@ -1,0 +1,36 @@
+<wxs src="../../utils/indexOf.wxs" module="tools" />
+
+<view class="page-body">
+    
+    <view class='wrapper'>
+    <view class="form">
+      <input id="title" type="text" placeholder="标题" value="{{title}}" bindinput="bindKeyInput"/>
+      <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            分类：{{array[index]}}
+          </view>
+        </picker>
+      </view>
+      <view class="section section_gap">
+          <view class="body-view">
+              置顶
+              <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+          </view>
+      </view>
+      <input class="labels" type="text" placeholder="添加标签 (用英文逗号分隔)" value="{{label}}" bindinput="bindLabel"/>
+    </view>
+      <view class='toolbar' bindtap="format">
+        <i class="iconfont icon-zitijiacu {{tools.indexOf(formats,'bold') ? 'ql-active' : ''}}" data-name="bold"></i>
+        <i class="iconfont icon-zitixieti {{tools.indexOf(formats,'italic') ? 'ql-active' : ''}}" data-name="italic"></i>
+        <i class="iconfont icon-zitishanchuxian {{tools.indexOf(formats,'strike') ? 'ql-active' : ''}}" data-name="strike"></i>
+        <i class="iconfont icon-outdent" data-name="indent" data-value="-1"></i>
+        <i class="iconfont icon-indent" data-name="indent" data-value="+1"></i>
+        <i class="iconfont icon-fengexian" bindtap="insertDivider"></i>
+        <i class="iconfont icon-charutupian" bindtap="insertImage"></i>
+      </view>
+    </view>
+</view>
+<editor id="editor" class="ql-container" placeholder="{{placeholder}}" showImgSize showImgToolbar showImgResize bindinput="getEditorValue"  bindready="onEditorReady">
+</editor>
+<button class="upload-btn" bindtap="upload">保 存</button>

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "i-checkbox-group": "../../../static/dist/checkbox-group/index",
+        "i-checkbox": "../../../static/dist/checkbox/index",
+        "i-toast": "../../../static/dist/toast/index"
+    }
+}

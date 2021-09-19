@@ -1,0 +1,120 @@
+.box {
+  width:100%;
+  height:100%;
+  overflow-y: scroll;
+}
+.search {
+    position: fixed;
+    width: 100%;
+    height:auto;
+    z-index:999;
+}
+.weui-search-bar {
+    position: relative;
+    padding: 8px 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #EFEFF4;
+    border-top: 1rpx solid #D7D6DC;
+    border-bottom: 1rpx solid #D7D6DC;
+  }
+  .weui-icon-search_in-box {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+  }
+  .weui-search-bar__form {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+            flex: auto;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1rpx solid #E6E6EA;
+  }
+  .weui-search-bar__box {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .weui-search-bar__input {
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .weui-search-bar__cancel-btn {
+    margin-left: 10px;
+    line-height: 28px;
+    color: #09BB07;
+    white-space: nowrap;
+  }
+
+
+  .top {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .toptitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .topButton {
+    position: absolute;
+    right: 10px;
+    background: #eee;
+    padding: 3px 20px;
+  }
+  
+  .list {
+    /* padding: 0px 20px 10px 20px; */
+    /* border-bottom: 2px solid #fff; */
+    /* width: 90%; */
+    margin: 0px auto;
+    margin-bottom: 30rpx;
+    /* padding: 20rpx 0rpx; */
+  }
+  
+  .title {
+    background: #fff;
+    padding: 15rpx 30rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10rpx 0rpx;
+  }
+  
+  .cz {
+    display: flex;
+    margin: 10rpx 0rpx;
+  }
+  
+  .cz_an {
+    margin-right: 30rpx;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10rpx 20rpx;
+    border-radius: 10rpx;
+  }
+  
+  .add {
+      position: fixed;
+      width:60px;
+      height:60px;
+      right:30px;
+      bottom:50px;
+      background: rgb(214, 73, 30);
+      font-size: 40px;
+      line-height:55px;
+      text-align: center;
+      border-radius:50%;
+      color: rgb(54, 202, 228);
+      opacity:0.8;
+      z-index: 999;
+  }
